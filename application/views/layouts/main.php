@@ -33,7 +33,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo site_url('home');?>">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="<?php echo site_url('home');?>">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="<?php echo site_url('/userc/signup');?>">Signup<span class="sr-only">(current)</span></a></li>
         <li><a href="<?php echo site_url('/mainc/index');?>">News<span class="sr-only">(current)</span></a></li>
         <li><a href="<?php echo site_url('/advertisement/index');?>">Advertisement<span class="sr-only">(current)</span></a></li>
@@ -45,7 +45,7 @@
   </div><!-- /.container-fluid -->
 </nav>
 <div clas="container">
-	<div class="col-xs-3">
+	<div class="col-xs-3" >
 		<?php $this->load->view('users/log_view');
 		?>
 	</div>

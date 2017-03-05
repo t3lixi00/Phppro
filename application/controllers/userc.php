@@ -133,10 +133,17 @@ class userc extends CI_Controller{
 
 
     if ($username=="admin"){
+
+
+     $this->session->set_userdata("admin");
+     $this->session->set_flashdata('admin_success', 'You have right to manage your users now!');
+     $this->session->set_flashdata('admin_failed', 'You are not allowed to access !');
       redirect('userc/show');
        
 
     }else{
+
+   //   $this->session->set_flashdata('admin_failed', 'You are not allowed to access !');
       redirect('home/index');
 
     }

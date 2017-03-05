@@ -1,4 +1,12 @@
 <div class="container" style="width: auto;">
+  <p class="bg-success">
+
+  <?php if($_SESSION["username"]!=="admin"):?>
+  <?php header("Location:../home");?> 
+  <?php echo $this->session->flashdata('admin_failed')?> 
+  <?php endif; ?>
+  </p>
+
   <h2>Users Administration</h2>
   <p>Here you can manage your users.</p>
 
